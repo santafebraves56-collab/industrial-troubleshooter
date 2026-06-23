@@ -9,7 +9,7 @@
 
 <p>AI-powered troubleshooting for industrial maintenance, instrumentation, electrical systems, VFDs, boilers, and control valves.</p>
 
-<p>Coming soon.</p>
+<p>Coming soon.</p> 
 
 </body>
 </html>
