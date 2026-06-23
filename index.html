@@ -1,15 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Industrial Troubleshooter</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Troubleshooter</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 60px 25px;
+      text-align: center;
+      background: linear-gradient(135deg, #020617, #1e293b);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 20px;
+      color: #cbd5e1;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cta {
+      margin-top: 30px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #38bdf8;
+      color: #020617;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 45px 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 22px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #facc15;
+    }
+
+    .troubleshooter-box {
+      background: #020617;
+      border: 1px solid #334155;
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    textarea, input, select {
+      width: 100%;
+      padding: 14px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 16px;
+    }
+
+    button {
+      background: #22c55e;
+      color: #020617;
+      padding: 14px 22px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .pricing {
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 25px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .warning {
+      background: #7f1d1d;
+      padding: 18px;
+      border-radius: 10px;
+      color: #fee2e2;
+    }
+  </style>
 </head>
 <body>
-<h1>Industrial Troubleshooter</h1>
 
-<p>AI-powered troubleshooting for industrial maintenance, instrumentation, electrical systems, VFDs, boilers, and control valves.</p>
+<header>
+  <h1>Industrial Troubleshooter</h1>
+  <p class="tagline">
+    AI-powered troubleshooting for industrial maintenance, I&E techs, electricians, operators, boilers, VFDs, control valves, instrumentation, and electrical systems.
+  </p>
+  <div class="cta">
+    <a href="#troubleshooter">Try the Troubleshooter</a>
+  </div>
+</header>
 
-<p>Coming soon.</p>
+<section>
+  <h2>Built for Real Plant Problems</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>VFDs</h3>
+      <p>Fault codes, motor issues, drive trips, overloads, communication faults, and startup problems.</p>
+    </div>
+    <div class="card">
+      <h3>Boilers</h3>
+      <p>Burner management, flame failure, ignition issues, low water trips, draft problems, and fuel gas checks.</p>
+    </div>
+    <div class="card">
+      <h3>Instrumentation</h3>
+      <p>4-20 mA loops, RTDs, thermocouples, transmitters, calibration issues, and signal troubleshooting.</p>
+    </div>
+    <div class="card">
+      <h3>Control Valves</h3>
+      <p>Valve hunting, stiction, solenoid problems, positioner issues, air supply restrictions, and tuning checks.</p>
+    </div>
+  </div>
+</section>
+
+<section id="troubleshooter">
+  <h2>AI Troubleshooter Preview</h2>
+  <div class="troubleshooter-box">
+    <label>Equipment Type</label>
+    <select>
+      <option>VFD</option>
+      <option>Boiler</option>
+      <option>Control Valve</option>
+      <option>Motor Starter</option>
+      <option>Transformer</option>
+      <option>4-20 mA Loop</option>
+      <option>RTD / Thermocouple</option>
+      <option>PLC / DCS</option>
+    </select>
+
+    <label>Describe the problem</label>
+    <textarea rows="5" placeholder="Example: ABB ACS580 fault 3210, control valve hunting at 5%, boiler will not light off..."></textarea>
+
+    <button onclick="alert('AI troubleshooting is coming soon. The next step is connecting this form to OpenAI.')">
+      Get Troubleshooting Steps
+    </button>
+  </div>
+</section>
+
+<section>
+  <h2>How It Will Work</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Enter the Problem</h3>
+      <p>Type the fault, symptom, equipment type, brand, or process issue.</p>
+    </div>
+    <div class="card">
+      <h3>2. AI Asks Questions</h3>
+      <p>The system narrows down the issue with follow-up questions like a senior tech would.</p>
+    </div>
+    <div class="card">
+      <h3>3. Get a Check Path</h3>
+      <p>Receive safe, step-by-step troubleshooting checks and likely causes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Planned Pricing</h2>
+  <div class="grid">
+    <div class="pricing">
+      <h3>Free</h3>
+      <p>Basic troubleshooting articles and limited questions.</p>
+    </div>
+    <div class="pricing">
+      <h3>Pro - $19/month</h3>
+      <p>Unlimited troubleshooting, fault-code lookups, and equipment guides.</p>
+    </div>
+    <div class="pricing">
+      <h3>Premium - $49/month</h3>
+      <p>Upload manuals, photos, nameplates, and advanced troubleshooting support.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Safety First</h2>
+  <div class="warning">
+    This tool is for training and troubleshooting support only. Always follow LOTO, NFPA 70E, NEC, manufacturer manuals, plant procedures, and company safety rules. Verify absence of voltage before working on electrical equipment.
+  </div>
+</section>
+
+<section>
+  <h2>Get Early Access</h2>
+  <p>Want to know when the AI troubleshooter goes live?</p>
+  <input type="email" placeholder="Enter your email" />
+  <button onclick="alert('Email signup will be connected later.')">Join Waitlist</button>
+</section>
+
+<footer>
+  IndustrialTroubleshooter.com © 2026. AI support for industrial maintenance professionals.
+</footer>
 
 </body>
 </html>
